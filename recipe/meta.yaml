@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paws.database_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paws.database/paws.database_{{ version }}.tar.gz
-  sha256: 15280854f0016c97915c82edc16ea931ad69f633930e9ce3c252fdf7e4628056
+  sha256: 8ceec7a2b58a01603c01e062006e9c8ff25507827bc576b0e770470d9ac793f4
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
